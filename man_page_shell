@@ -1,0 +1,27 @@
+.Dd 14/04/2020
+.Dt My_shell 1
+.Sh NAME
+.Nm Simple shell
+.Nm UNIX command interpreter().
+.Sh SYNOPSIS
+.Nm
+.Op options              \" [-abcd]
+.Op string || file         \" [-a path]
+.Sh DESCRIPTION          \" Section Header - required - don't modify
+
+This  simple  shell is a command-line interpreter that provides an interface who takes, from the standard input,functions by commmands
+.Sh OVERVIEW
+.Nm
+This shell split the enter from the user in tokens, the first token
+.Nm
+is a argument, and after compare whit a list of built-in programs and after check the $PATH and execute this command if can be found
+.Nm
+the other tokens are treated as options.
+.Sh SEE ALSO
+.\" List links in ascending order by section, alphabetically within a section.
+.\" Please do not reference files that do not exist without filing a bug report
+.Xr sh 1 ,
+.\" .Sh BUGS              \" Document known, unremedied bugs
+.\" .Sh HISTORY           \" Document history if command behaves in a unique manner
+.Sh AUTHORS
+Santiago Trujillo Rodriguez & Manuel Acero Acero...
