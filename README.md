@@ -81,5 +81,5 @@ All commands and builtins that you can use are in the manual page.
   * `_strdup` - Prints the array reverse.
 ### Authors
  - [Manuel Acero](https://github.com/Manga08)
- - [Edward Trujillo](https://github.com/thiago1623)
+ - [Santiago Trujillo](https://github.com/thiago1623)
  
