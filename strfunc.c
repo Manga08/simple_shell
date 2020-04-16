@@ -77,7 +77,7 @@ int _strlen(char *s)
 {
 	int ct;
 
-	for (ct = 0; *(s + ct) != '\0'; ct++)
+	for (ct = 0; s && s[ct] != '\0'; ct++)
 	{
 	}
 	return (ct);
