@@ -75,7 +75,7 @@ void _exec(char *arg1, char **buffer, char **buffercpy, char **tmp, int pro)
 		_free(tmp);
 		_free(buffercpy);
 		_free(buffer);
-		kill(getpid(), SIGKILL);
+		exit(0);
 	}
 	else
 		waitpid((child_pid), &exec_status, 0);
@@ -139,5 +139,6 @@ int  main(int arv, char **arg)
 		_free(&tmp), _free(&buffercpy), _free(&buffer);
 		procces++;
 	}
+	_putchar('\n');
 	return (0);
 }
