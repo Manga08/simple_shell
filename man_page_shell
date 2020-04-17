@@ -18,10 +18,74 @@ is a argument, and after compare whit a list of built-in programs and after chec
 .Nm
 the other tokens are treated as options.
 .Sh SEE ALSO
-.\" List links in ascending order by section, alphabetically within a section.
-.\" Please do not reference files that do not exist without filing a bug report
+
 .Xr sh 1 ,
-.\" .Sh BUGS              \" Document known, unremedied bugs
-.\" .Sh HISTORY           \" Document history if command behaves in a unique manner
+
+.Sh SOME OPTIONS
+shearches in the PATH, has built-ins commands and uses an environment to execute these commands
+
+.Nm /bin/ls
+- lists contents of the current directory.
+.PP
+.Nm /bin/ls -l
+- Lists contents of the current directory in long format.
+.PP
+.Nm /bin/ls -l -a
+- Lists all the contents of the current directory in long format, even those with . and ..
+.PP
+.Nm /bin/ls -la
+- Makes the same as /bin/ls -l -a
+.PP
+.Nm /bin/pwd
+- Prints the name of the current working directory
+.PP
+.Nm ls
+- lists contents of the current directory.
+.PP
+.Nm ls -l
+- Lists contents of the current directory in long format.
+.PP
+.Nm ls -l -a
+- Lists all the contents of the current directory in long format, even those with . and ..
+.PP
+.Nm ls -la
+- Makes the same as ls -l -a
+.PP
+.Nm pwd
+- Prints the name of the current working directory
+.Nm exit
+- Exit from the shell
+.PP
+.Nm cat
+- Concatenate and print files writing them to the standard output.
+.PP
+.Nm cat
+- Concatenate and print files writing them to the standard output.
+
+.Sh SOME EXAMPLES
+
+$ ./hsh
+ ($) /bin/ls
+ hsh main.c shell.c
+ ($)
+ ($) exit
+ $
+
+$ ./hsh
+ ($) ls -l
+ -rw-rw-r--1 vagrant vagrant  1863 apr 16 06:29 _getline.c
+ -rwxrwxr-x1 vagrant vagrant 18419 apr 17 17:48 hsh
+ -rw-rw-r--1 vagrant vagrant  2985 apr 16 06:29 main.c
+ -rw-rw-r--1 vagrant vagrant  1833 apr 16 06:29 shell.c
+ ($)
+ ($) exit
+ $
+
+$ ./hsh
+ ($) cat test
+ this is my file test.
+ ($)
+ ($) exit
+ $
 .Sh AUTHORS
 Santiago Trujillo Rodriguez & Manuel Acero Acero...
