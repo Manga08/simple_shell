@@ -18,7 +18,7 @@ A simple UNIX command interpreter that provides a user interface to access and g
 ## Instalation
 *  Clone this repository:
 ```sh
-git clone https://github.com/Doniben/simple_shell.git
+git clone https://github.com/Manga08/simple_shell.git
 ```
 * Inside the repository, compile.
 * Execute:
